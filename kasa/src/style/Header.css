@@ -1,0 +1,11 @@
+header {
+    display:flex;
+    justify-content: space-between;
+    background-color: green;
+
+}
+
+li {
+    color : red 
+
+}
