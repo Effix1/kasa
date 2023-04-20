@@ -1,10 +1,11 @@
+
 import Banner from '../components/Banner'
 
-export default function Homepage() {
+export default function Logement() {
     return (
         <>
         <Banner/>
-        <h1>Homepage</h1>
+        <h1>Logement</h1>
         </>
         )
     }

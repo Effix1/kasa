@@ -1,11 +1,17 @@
 header {
     display:flex;
     justify-content: space-between;
-    background-color: green;
+    border: 1px solid #ff6060;
 
 }
 
+ul {
+    width: 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+
 li {
-    color : red 
+    color : #ff6060 
 
 }

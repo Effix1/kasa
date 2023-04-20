@@ -1,23 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
-
-import Logements from './pages/Logments';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { RouterProvider } from 'react-router-dom';
+import router from './router';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-root.render (<App/>);
+root.render (<React.StrictMode>
+  <RouterProvider router={router}/>
+</React.StrictMode>);
 
-
-/*
- <React.StrictMode>
-    <Router>
-      <Route path='/'>
-        <App/>
-      </Route>
-      <Route path="/logements">
-        <Logements/>
-      </Route>
-    </Router>
-  </React.StrictMode>
-  */
