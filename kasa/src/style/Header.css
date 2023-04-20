@@ -1,8 +1,19 @@
 header {
-    display:flex;
-    justify-content: space-between;
+    position: absolute;
+    width: 1240px;
+    height: 68px;
+    left: 100px;
+    top: 40px;
     border: 1px solid #ff6060;
 
+}
+
+nav {
+    border: 1px solid gold;
+    position: absolute;
+    left: 75.08%;
+    right: 0%;
+    bottom: 25%;
 }
 
 ul {
@@ -12,6 +23,7 @@ ul {
 }
 
 li {
-    color : #ff6060 
-
+    color : #ff6060;
+    list-style: none; 
+    
 }
