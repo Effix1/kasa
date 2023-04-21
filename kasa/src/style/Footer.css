@@ -1,0 +1,15 @@
+footer {
+   
+    width: 100%;
+    height: 209px;
+    background-color: #000;
+    border: 1px solid gold;
+}
+.logo_footer {
+    
+    left: 45.76%;
+    right: 45.76%;
+    top: 31.58%;
+    bottom: 49.55%;
+    border: 1px solid pink;
+}

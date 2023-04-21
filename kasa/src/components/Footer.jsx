@@ -1,9 +1,11 @@
-import  '../style/Header.css'
+import  '../style/Footer.css'
+import logo_nb from '../assets/logo_kasa_n&b.svg'
 
 export default function Footer(){
     return (
         <footer>
-            <p>footer</p>
+            <img src={logo_nb} alt='logo noir et blanc'  className='logo_footer'/>
+            <p>© 2020 Kasa. All rights reserved</p>
            
         </footer>
     )

@@ -23,7 +23,5 @@ export default  createBrowserRouter([
                 element: <About/>
             }
         ]
-    }
-    
+    }   
 ]);
-

@@ -7,9 +7,9 @@ export default function Header(){
             <img src= {logo} alt='logo'/>
             <nav>
                 <ul>
-                    <li className='li_acceuil'><NavLink to='/' >Accueil</NavLink></li>
+                    <li className='li_acceuil'><NavLink to='/' className={'style_link'} >Accueil</NavLink></li>
                     
-                    <li className='li_about'><NavLink to='/a-propos'>à propos</NavLink></li>
+                    <li className='li_about'><NavLink to='/a-propos' className={'style_link'}>À propos</NavLink></li>
                 </ul>
             </nav>
         </header>
