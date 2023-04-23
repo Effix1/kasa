@@ -1,3 +1,23 @@
-.banner-title {
-    color:red
+.content_banner {
+    position: relative;
+
+}
+
+.img_ban{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1.5rem;
+}
+
+.banner_text {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(185, 208, 237);
+    font-weight: 500;
+    font-size: 1.5rem;
 }
