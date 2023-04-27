@@ -1,0 +1,40 @@
+.gallery {
+    margin-top: 43px;
+    padding: 56px 50px;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+}
+
+.card_logement {
+    position: relative;
+    border-radius: 10px;
+    margin: 0;
+    width: 340px;
+    height: 340px;
+    display: flex;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.image_card {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: #FF6060;
+    opacity: 70%;
+}
+
+.location_title {
+    position: absolute;
+    top: 268px;
+    left: 20px;
+    width: 300px;
+    height: 52px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #f7f7f7;
+}

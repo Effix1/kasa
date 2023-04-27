@@ -9,10 +9,14 @@ export default  createBrowserRouter([
     {
         path: "/",
         element: <Layout/>,
+        
         children:[
             {
                 path:"",
-                element: <Homepage/>
+                element: <Homepage/>,
+                loader: async ({ params }) => {
+                    return fetch(`/logements.json`);
+                  },
             },
             {
                 path: "logement",
@@ -21,7 +25,9 @@ export default  createBrowserRouter([
             {
                 path: "a-propos",
                 element: <About/>
-            }
+            },
+            
+           
         ]
     }   
 ]);

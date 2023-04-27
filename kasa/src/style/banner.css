@@ -1,12 +1,13 @@
 .content_banner {
     position: relative;
-
+    width: 1240px;
 }
 
 .img_ban{
+    background-blend-mode: color;
     width: 100%;
     object-fit: cover;
-    border-radius: 1.5rem;
+    border-radius: 10px;
 }
 
 .banner_text {
