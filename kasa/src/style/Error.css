@@ -1,0 +1,23 @@
+.div_error {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #ff6060;
+}
+
+.error_title {
+    font-size: 200px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.error_link {
+    margin: 100px 0 100px 0;
+}
+
+.error_link :hover {
+    text-decoration: underline;
+}
+
+
+

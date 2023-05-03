@@ -1,15 +1,10 @@
-
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import Banner from '../components/Banner';
 import Card from '../components/Card';
 
-
-
-
-
 export default function Homepage() {
     const logements = useLoaderData()
-   
+    console.log(logements)
     return (
         <>
         <div className='corp'>
@@ -17,19 +12,19 @@ export default function Homepage() {
         
         <div className='gallery'>                                   
            {logements.map((logement)=>{
-            
-            return <Card logement={logement}/>
-            
+            const idLogement = logement.id;
+            return <>
+                <Link to={`/logement/${idLogement}`}><Card logement={logement}/></Link>
+                
+            </>  
            })} 
         </div>
         </div>
-       
-      
         </>
         )
     }
 
-    //   <Gallery/>    //
+    
     
     
     

@@ -1,13 +1,21 @@
 .gallery {
+    align-self: center;
+    width: 1240px;
+    border-radius: 10px;
     margin-top: 43px;
-    padding: 56px 50px;
+    padding:30px 0 ;
     gap: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
     justify-content: space-around;
     background-color: #f7f7f7;
     border-radius: 10px;
+}
+
+.corp{
+
 }
 
 .card_logement {

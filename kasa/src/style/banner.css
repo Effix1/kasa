@@ -1,6 +1,7 @@
 .content_banner {
     position: relative;
     width: 1240px;
+    align-self: center;
 }
 
 .img_ban{
