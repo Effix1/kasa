@@ -1,15 +1,14 @@
-import { useLoaderData } from 'react-router-dom';
+
 import Banner from '../components/Banner'
+import LogementPage from '../components/Logement';
 
 
 export default function Logement() {
-    const logements = useLoaderData()
-    console.log(logements)
     
     return (
         <>
         <Banner/>
-        <h1>Logement</h1>
+        <LogementPage/>
         </>
         )
     }

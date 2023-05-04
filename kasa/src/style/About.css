@@ -1,0 +1,28 @@
+.about_content {
+    padding-bottom: 100px;
+}
+
+.card {
+    background-color: #ff6060;
+    width: 1023px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+
+}
+
+
+h2 {
+    margin: 0;
+    height: 47px;   
+    font-size: 24px;
+    font-weight: 500;
+    padding-left: 18px;
+    color: #fff;
+}
+
+.card_paragraph {
+    margin-top: 0;
+    color: #ff6060;
+    padding: 36px 18px 19px;
+    background-color: #F7F7F7;
+}
