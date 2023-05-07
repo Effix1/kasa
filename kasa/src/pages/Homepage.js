@@ -7,7 +7,7 @@ export default function Homepage() {
     console.log(logements)
     return (
         <>
-        <div className='corp'>
+        
         <Banner/>
         
         <div className='gallery'>                                   
@@ -19,7 +19,7 @@ export default function Homepage() {
             </>  
            })} 
         </div>
-        </div>
+        
         </>
         )
     }

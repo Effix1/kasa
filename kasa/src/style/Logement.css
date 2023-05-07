@@ -1,0 +1,80 @@
+.content_logement {
+    display: grid;
+    grid-template-columns: 1, 1fr;
+}
+
+.content_img img {
+    width: 1240px;
+    height: 415px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.content_data {
+    width: 100%;
+    background-color: pink;
+    border: 1px solid gray;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    padding: 0px;
+    
+
+}
+
+.content {
+    background-color: aqua;
+    max-width: 550px;
+}
+
+.logement_selection {
+    align-items: flex-start;
+    gap: 10px;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.list-selection {
+    display: flex;
+    background-color: #ff6060;
+    color: #fff;
+    border-radius: 10px;
+    width: 115px;
+    height: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_loca-description {
+    border: 2px solid red;
+}
+
+.content_location {
+    grid-column: 1 / span 2;
+}
+
+.content_location h1 {
+    color: #ff6060;
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.content_location p {
+    color: #ff6060;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+
+.content_equipement {
+    border: 3px solid green;
+}
+
+
+

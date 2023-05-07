@@ -1,3 +1,4 @@
+import '../style/Gallery.css'
 import '../style/card.css'
 
 export default function Card ({logement}) {

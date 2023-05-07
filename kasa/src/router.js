@@ -15,15 +15,26 @@ export default  createBrowserRouter([
             {
                 path:"",
                 element: <Homepage/>,
-                loader: async ({ params}) => {
+                loader: async () => {
                     return fetch(`/logements.json`);
                   },
             },
             {
                 path: "logement/:id",
                 element: <Logement/>,
-                loader: async ({ params}) => {
-                    return fetch(`/logements.json`);
+                loader: async ({params}) => {
+
+                    return fetch(`/logements.json`)
+                    .then((res)=>res.json())
+                    .then((logements)=>{
+                        return logements.find((logement)=>{
+                          if (params.id ===logement.id){
+                            return true
+                          }  else {
+                            return false
+                          }        
+                        })
+                    })
                   },
             },
             {
