@@ -1,15 +1,15 @@
 .gallery {
-   background-color: #F7F7F7;
-   max-width: 1240px;
-   display: grid;
-   grid-template-columns: repeat(3,1fr);
-   grid-gap: 50px 60px;
-   justify-content: space-evenly;
-   padding: 50px;
-   margin-top: 43px;
-   border-radius: 25px;
+  background-color: #f7f7f7;
+  max-width: 1240px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px 60px;
+  justify-content: space-evenly;
+  padding: 50px;
+  margin-top: 43px;
+  border-radius: 25px;
 }
 
 .li_option {
-   color: black;
+  color: black;
 }

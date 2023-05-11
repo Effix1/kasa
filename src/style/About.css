@@ -10,17 +10,19 @@
   background-color: #ff6060;
   width: 1023px;
   margin-bottom: 25px;
+  border-radius: 5px;
 }
 
 .about_action_bar {
-  border: 1px solid black;
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-h2 {
+.about_tittle_card {
+  display: flex;
+  align-items: center;
   margin: 0;
   height: 47px;
   font-size: 24px;
@@ -30,19 +32,24 @@ h2 {
 }
 
 button {
-  background-color: black;
+  background-color: transparent;
   height: 33px;
-}
-
-button:active .about_button {
-  background-color: red;
+  border: none;
 }
 
 .about_button {
-  background-color: red;
+  transform: rotate(180deg);
+}
+
+.about_button {
   height: 13.71px;
   width: 24px;
 }
+
+.rotate {
+  transform: translateY(180);
+}
+
 .slide_box {
   overflow: hidden;
 }
@@ -50,8 +57,5 @@ button:active .about_button {
 .card_paragraph {
   display: none;
   margin: 0;
-  color: pink;
   padding: 36px 18px 19px;
-  background-color: red;
-  border: 1px solid black;
 }

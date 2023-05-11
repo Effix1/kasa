@@ -1,102 +1,94 @@
 .content_logement {
-    display: grid;
-    grid-template-columns: 1, 1fr;
+  display: grid;
+  grid-template-columns: 1, 1fr;
 }
 
 .content_img img {
-    width: 1240px;
-    height: 415px;
-    object-fit: cover;
-    border-radius: 25px;
+  width: 1240px;
+  height: 415px;
+  object-fit: cover;
+  border-radius: 25px;
 }
 
 .content_data {
-    width: 100%;
-    background-color: pink;
-    border: 1px solid gray;
-    display: grid;
-    grid-gap: 50px;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: start;
-    padding: 0px;
-    
-
+  width: 100%;
+  background-color: pink;
+  border: 1px solid gray;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: start;
+  padding: 0px;
 }
 
 .content {
-    background-color: aqua;
-    max-width: 550px;
+  background-color: aqua;
+  max-width: 550px;
 }
 
 .logement_selection {
-    align-items: flex-start;
-    gap: 10px;
-    justify-content: flex-start;
-    padding: 0;
+  align-items: flex-start;
+  gap: 10px;
+  justify-content: flex-start;
+  padding: 0;
 }
 
 .list-selection {
-    display: flex;
-    background-color: #ff6060;
-    color: #fff;
-    border-radius: 10px;
-    width: 115px;
-    height: 25px;
-    font-size: 14px;
-    font-weight: 500;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  background-color: #ff6060;
+  color: #fff;
+  border-radius: 10px;
+  width: 115px;
+  height: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
 }
 
 .content_loca-description {
-    border: 2px solid red;
+  border: 2px solid red;
 }
 
 .content_location {
-    grid-column: 1 / span 2;
-    width: auto;
-
+  grid-column: 1 / span 2;
+  width: auto;
 }
 
 .content_location h1 {
-    color: #ff6060;
-    font-size: 36px;
-    font-weight: 500;
-    margin: 0;
-    white-space: nowrap;
+  color: #ff6060;
+  font-size: 36px;
+  font-weight: 500;
+  margin: 0;
+  white-space: nowrap;
 }
 
 .content_location p {
-    color: #ff6060;
-    margin: 0;
-    font-size: 18px;
-    font-weight: 500;
+  color: #ff6060;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
 }
 
-
-
 .content_equipement {
-    border: 3px solid green;
+  border: 3px solid green;
 }
 
 .description_slide {
-    background-color: #ff6060;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    color: #fff;
-    padding-left: 20px;
+  background-color: #ff6060;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding-left: 20px;
 }
 
 .chevron-buttton {
-    border: 1px solid black;
-    background-color: transparent;
+  border: 1px solid black;
+  background-color: transparent;
 }
 
 .chevron {
-    height: 13.71px;
-    width: 24px;
+  height: 13.71px;
+  width: 24px;
 }
-
-
-
