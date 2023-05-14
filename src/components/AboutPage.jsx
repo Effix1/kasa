@@ -3,7 +3,10 @@ import '../style/About.css';
 import chevron from '../assets/Vector.png';
 
 export default function AboutPage() {
-  const cardParagraphRef = useRef(null);
+  return <p>salut</p>;
+}
+
+/*const cardParagraphRef = useRef(null);
   const rotate = document.querySelector('about_button');
 
   const buttonOnClick = () => {
@@ -15,7 +18,7 @@ export default function AboutPage() {
       cardParagraph.style.display = 'block';
     }
     if (cardParagraph.style.display === 'block') {
-      rotate.classList.toggle('rotate');
+      rotate.classList.add('rotate');
     }
   };
 
@@ -74,5 +77,4 @@ export default function AboutPage() {
         </p>
       </div>
     </div>
-  );
-}
+  );*/

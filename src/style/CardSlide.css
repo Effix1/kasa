@@ -1,0 +1,20 @@
+.card-content {
+  border: 1px solid black;
+}
+.header-card {
+  display: flex;
+  background-color: pink;
+  justify-content: space-between;
+}
+
+.card-paragraph {
+  display: none;
+}
+
+.open {
+  display: block;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
