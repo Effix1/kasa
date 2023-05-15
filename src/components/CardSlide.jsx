@@ -13,9 +13,8 @@ export default function CardSlide({ text, textContent }) {
   return (
     <div className='card-content'>
       <div className='header-card'>
-        <p>{text}</p>
+        <p className='card-title'>{text}</p>
         <button className='card-button' onClick={testClick}>
-          {buttonOff ? 'Hide' : 'Show'}
           <img src={chevron} alt='' className={rotateChevron} />
         </button>
       </div>
