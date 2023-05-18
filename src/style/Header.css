@@ -1,61 +1,43 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    
-}
-
-
-
-.container {
-    max-width: 1240px;
-    margin: 0 auto;
-   padding:0 100px 0 100px ;
-}
-
 header {
-    max-width: 1240px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 100px 63px 100px;
-    
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 100px 63px 100px;
 }
 
 .logo_banner {
-    height: 68px; 
+  height: 68px;
 }
 
 ul {
-    display: flex;
-    justify-content: space-between;
-    gap:57px;
+  display: flex;
+  justify-content: space-between;
+  gap: 57px;
 }
 
 li {
-    color : #ff6060;
-    list-style: none; 
-    font-size: 24px; 
-    font-weight: 500; 
+  color: #ff6060;
+  list-style: none;
+  font-size: 24px;
+  font-weight: 500;
 }
-
 
 .style_link {
-    color: #ff6060;
-    text-decoration: none; 
+  color: #ff6060;
+  text-decoration: none;
 }
 
-.active{
-    text-decoration: underline;
+.active {
+  text-decoration: underline;
 }
 
-.nav-link {
-    color: #ff6060;
-    text-decoration: none; 
+@media screen and (max-width: 375px) {
+  #root {
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    max-width: 100%;
+  }
 }
-
-
-
-
-

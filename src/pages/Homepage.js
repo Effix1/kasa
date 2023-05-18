@@ -8,7 +8,7 @@ export default function Homepage() {
   console.log(logements);
   return (
     <>
-      <Banner image={image_ban} text='Chez nous' />
+      <Banner image={image_ban} text='Chez vous, partout et ailleurs' />
 
       <div className='gallery'>
         {logements.map((logement) => {
