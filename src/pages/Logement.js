@@ -5,6 +5,7 @@ import star from '../assets/star.png';
 
 export default function Logement() {
   const logement = useLoaderData();
+  const equipments = logement.equipments;
 
   console.log(logement.equipments);
   return (
@@ -47,16 +48,16 @@ export default function Logement() {
             <div className='content_loca-description content'>
               <div className='logement-content-cardslide'>
                 <div className='slider'>
-                  <CardSlide
-                    text={'Description'}
-                    textContent={logement.description}
-                  />
+                  <CardSlide text={'Description'}>
+                    <p>{logement.description}</p>
+                  </CardSlide>
                 </div>
                 <div className='slider'>
-                  <CardSlide
-                    text={'Coucou'}
-                    textContent={logement.description}
-                  />
+                  <CardSlide text={'Coucou'}>
+                    {equipments.map((equipment) => {
+                      return <p>{equipment}</p>;
+                    })}
+                  </CardSlide>
                 </div>
               </div>
             </div>

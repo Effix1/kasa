@@ -10,7 +10,7 @@ header {
   height: 68px;
 }
 
-ul {
+.ul-header {
   display: flex;
   justify-content: space-between;
   gap: 57px;
@@ -19,13 +19,13 @@ ul {
 li {
   color: #ff6060;
   list-style: none;
-  font-size: 24px;
   font-weight: 500;
 }
 
 .style_link {
   color: #ff6060;
   text-decoration: none;
+  font-size: 24px;
 }
 
 .active {
@@ -33,11 +33,19 @@ li {
 }
 
 @media screen and (max-width: 375px) {
-  #root {
-    display: flex;
-    flex-direction: column;
-  }
   header {
-    max-width: 100%;
+    padding: 20px;
+  }
+
+  .logo_banner {
+    height: 47px;
+  }
+
+  .style_link {
+    font-size: 12px;
+  }
+
+  .ul-header {
+    gap: 10px;
   }
 }

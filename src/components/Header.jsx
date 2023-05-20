@@ -7,7 +7,7 @@ export default function Header() {
     <header>
       <img src={logo} alt='logo' className='logo_banner' />
       <nav>
-        <ul>
+        <ul className='ul-header'>
           <li className='li_acceuil'>
             <NavLink to='/' className={'style_link'}>
               Accueil
