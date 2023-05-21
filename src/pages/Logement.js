@@ -2,6 +2,8 @@ import { useLoaderData } from 'react-router-dom';
 import '../style/Logement.css';
 import CardSlide from '../components/CardSlide';
 import star from '../assets/star.png';
+import Tag from '../components/Tag';
+import Rating from '../components/Rating';
 
 export default function Logement() {
   const logement = useLoaderData();
@@ -22,20 +24,12 @@ export default function Logement() {
           </div>
 
           <div className='logement-slide-content'>
-            <div className='navAndStar'>
-              <nav>
-                <ul className='logement_selection'>
-                  <li className='list-selection'>
-                    {logement.title.split(' ')[0]}
-                  </li>
-                  <li className='list-selection'>
-                    {logement.location.split(' ')[0]}
-                  </li>
-                  <li className='list-selection'>
-                    {logement.location.split(' ')[2]}
-                  </li>
-                </ul>
-              </nav>
+            <div className='tag-rating'>
+              <div className='contentTag'>
+                <Tag tar={logement.tags} />
+              </div>
+
+              <Rating />
               <div className='star-content'>
                 <img src={star} alt=' star' />
                 <img src={star} alt=' star' />

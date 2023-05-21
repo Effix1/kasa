@@ -1,0 +1,16 @@
+.salut {
+  color: red;
+}
+
+.tag {
+  display: flex;
+  background-color: #ff6060;
+  color: #fff;
+  border-radius: 10px;
+  width: 115px;
+  height: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+}

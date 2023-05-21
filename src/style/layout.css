@@ -9,3 +9,13 @@ body {
   margin: 0 auto;
   padding: 0 100px 0 100px;
 }
+
+@media screen and (max-width: 375px) {
+  .container {
+    padding: 0;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
