@@ -4,12 +4,12 @@ import CardSlide from '../components/CardSlide';
 import star from '../assets/star.png';
 import Tag from '../components/Tag';
 import Rating from '../components/Rating';
+import ProfilThumbnail from '../components/ProfilThumbnail';
 
 export default function Logement() {
   const logement = useLoaderData();
   const equipments = logement.equipments;
 
-  console.log(logement.equipments);
   return (
     <>
       <div className='content_logement'>
@@ -19,8 +19,13 @@ export default function Logement() {
 
         <div className='content_data'>
           <div className='content_location '>
-            <h1>{logement.title}</h1>
-            <p>{logement.location}</p>
+            <div>
+              <h1>{logement.title}</h1>
+              <p>{logement.location}</p>
+            </div>
+            <div>
+              <ProfilThumbnail />
+            </div>
           </div>
 
           <div className='logement-slide-content'>

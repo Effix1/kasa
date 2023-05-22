@@ -48,7 +48,8 @@
 
 .content_location {
   width: auto;
-  grid-column-start: span 2;
+  display: flex;
+  justify-content: space-between;
 }
 
 .tag-rating {
