@@ -1,7 +1,6 @@
 import { useLoaderData } from 'react-router-dom';
 import '../style/Logement.css';
 import CardSlide from '../components/CardSlide';
-import star from '../assets/star.png';
 import Tag from '../components/Tag';
 import Rating from '../components/Rating';
 import ProfilThumbnail from '../components/ProfilThumbnail';
@@ -33,26 +32,19 @@ export default function Logement() {
               <div className='contentTag'>
                 <Tag tar={logement.tags} />
               </div>
-
-              <Rating />
-              <div className='star-content'>
-                <img src={star} alt=' star' />
-                <img src={star} alt=' star' />
-                <img src={star} alt=' star' />
-                <img src={star} alt=' star' />
-                <img src={star} alt=' star' />
-              </div>
+              {console.log(logement)}
+              <Rating tar={logement.rating} />
             </div>
 
             <div className='content_loca-description content'>
               <div className='logement-content-cardslide'>
                 <div className='slider'>
-                  <CardSlide text={'Description'}>
+                  <CardSlide text={'Description'} className={'small'}>
                     <p>{logement.description}</p>
                   </CardSlide>
                 </div>
                 <div className='slider'>
-                  <CardSlide text={'Coucou'}>
+                  <CardSlide text={'Coucou'} className={'small'}>
                     {equipments.map((equipment) => {
                       return <p>{equipment}</p>;
                     })}

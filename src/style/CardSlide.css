@@ -43,3 +43,16 @@ button {
 .rotate {
   transform: rotate(180deg);
 }
+
+.small .header-card {
+  height: 52px;
+  align-items: center;
+}
+
+.small .card-title {
+  font-size: 18px;
+}
+
+.small .card-paragraph p {
+  font-size: 18px;
+}

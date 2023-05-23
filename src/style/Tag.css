@@ -4,10 +4,12 @@
   color: #fff;
   border-radius: 10px;
   width: auto;
+  min-width: 115px;
   height: 25px;
   font-size: 14px;
   font-weight: 500;
   justify-content: center;
   align-items: center;
   white-space: nowrap;
+  padding: 3px;
 }
