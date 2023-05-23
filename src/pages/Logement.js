@@ -4,6 +4,7 @@ import CardSlide from '../components/CardSlide';
 import Tag from '../components/Tag';
 import Rating from '../components/Rating';
 import ProfilThumbnail from '../components/ProfilThumbnail';
+import SlideShow from '../components/Slideshow';
 
 export default function Logement() {
   const logement = useLoaderData();
@@ -13,9 +14,8 @@ export default function Logement() {
     <>
       <div className='content_logement'>
         <div className='content_img'>
-          <img src={logement.cover} alt='' />
+          <SlideShow />
         </div>
-
         <div className='content_data'>
           <div className='content_location '>
             <div>

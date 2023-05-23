@@ -1,0 +1,29 @@
+.contentSlideshow {
+  position: relative;
+  width: 100%;
+}
+
+.slideshowPicture {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.chevron-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+}
+
+.chevronleft,
+.chevronright {
+  width: 20px;
+  height: 20px;
+  opacity: 0.5;
+  pointer-events: auto;
+}
