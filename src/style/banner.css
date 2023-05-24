@@ -2,6 +2,8 @@
   position: relative;
   max-width: 1240px;
   height: 223px;
+  overflow: hidden;
+  border-radius: 25px;
 }
 
 .img_ban {
@@ -9,7 +11,6 @@
   top: 0;
   left: 0;
   object-fit: contain;
-  border-radius: 25px;
 }
 
 .content_banner::after {
@@ -44,17 +45,15 @@
   .content_banner {
     width: 335px;
     height: 111px;
-    margin: 0;
-    background-color: black;
-    overflow: hidden;
-    height: 111px;
   }
 
   .img_ban {
+    width: auto;
     height: 100%;
   }
 
   .banner_text {
     font-size: 24px;
+    padding-left: 16px;
   }
 }

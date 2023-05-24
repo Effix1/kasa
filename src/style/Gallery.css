@@ -10,6 +10,9 @@
   border-radius: 25px;
 }
 
-.li_option {
-  color: black;
+@media screen and (max-width: 375px) {
+  .gallery {
+    background-color: #fff;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

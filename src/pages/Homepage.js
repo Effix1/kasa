@@ -13,11 +13,9 @@ export default function Homepage() {
         {logements.map((logement) => {
           const idLogement = logement.id;
           return (
-            <>
-              <Link to={`/logement/${idLogement}`}>
-                <Card logement={logement} />
-              </Link>
-            </>
+            <Link to={`/logement/${idLogement}`}>
+              <Card logement={logement} />
+            </Link>
           );
         })}
       </div>
