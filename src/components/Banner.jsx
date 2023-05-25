@@ -15,4 +15,3 @@ export default function Banner({ image, text }) {
     </>
   );
 }
-//<p className='banner_text'>Chez vous, partout et ailleurs</p>

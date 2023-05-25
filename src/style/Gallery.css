@@ -14,5 +14,7 @@
   .gallery {
     background-color: #fff;
     grid-template-columns: repeat(1, 1fr);
+    padding-top: 20px;
+    margin: 0;
   }
 }
