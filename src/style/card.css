@@ -2,8 +2,8 @@
   position: relative;
   border-radius: 10px;
   margin: 0;
-  width: 340px;
-  height: 340px;
+  max-width: 340px;
+  max-height: 340px;
   display: flex;
   background: linear-gradient(
     180deg,

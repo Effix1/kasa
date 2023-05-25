@@ -14,9 +14,7 @@ export default function SlideShow({ images }) {
   };
 
   const previousSlide = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + pictures.length) % pictures.length
-    );
+    setCurrentIndex((prevIndex) => (prevIndex - 1) % pictures.length);
   };
 
   return (
