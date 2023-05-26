@@ -3,11 +3,30 @@
   max-width: 1240px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px 60px;
+  grid-gap: 50px;
   justify-content: space-evenly;
   padding: 50px;
   margin-top: 43px;
   border-radius: 25px;
+  grid-auto-rows: 1fr;
+}
+
+@media screen and (max-width: 1000px) {
+  .gallery {
+    background-color: #fff;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 20px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .gallery {
+    background-color: #fff;
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 20px;
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 375px) {

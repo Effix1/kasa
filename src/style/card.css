@@ -2,8 +2,7 @@
   position: relative;
   border-radius: 10px;
   margin: 0;
-  max-width: 340px;
-  max-height: 340px;
+  height: 100%;
   display: flex;
   background: linear-gradient(
     180deg,
@@ -22,9 +21,8 @@
 
 .location_title {
   position: absolute;
-  top: 268px;
-  left: 20px;
-  height: 52px;
+  bottom: 0px;
+  left: 10px;
   font-size: 18px;
   font-weight: 500;
   color: #f7f7f7;

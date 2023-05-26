@@ -10,6 +10,15 @@ body {
   padding: 0 100px 0 100px;
 }
 
+@media screen and (max-width: 1000px) {
+  .container {
+    padding: 0 10px 0 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+}
+
 @media screen and (max-width: 375px) {
   .container {
     padding: 0;

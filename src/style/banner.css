@@ -41,6 +41,10 @@
   width: 100%;
 }
 
+.break-banner-text {
+  display: none;
+}
+
 @media screen and (max-width: 375px) {
   .content_banner {
     width: 335px;
@@ -55,5 +59,9 @@
   .banner_text {
     font-size: 24px;
     padding-left: 16px;
+  }
+
+  .break-banner-text {
+    display: block;
   }
 }

@@ -7,7 +7,16 @@ export default function Homepage() {
   const logements = useLoaderData();
   return (
     <>
-      <Banner image={image_ban} text='Chez vous, partout et ailleurs' />
+      <Banner
+        image={image_ban}
+        text={
+          <span>
+            Chez vous,
+            <br className='break-banner-text' />
+            partout et ailleurs
+          </span>
+        }
+      />
 
       <div className='gallery'>
         {logements.map((logement) => {

@@ -14,7 +14,7 @@ export default function Logement() {
     <>
       <div className='content_logement'>
         <div className='content_img'>
-          <SlideShow />
+          <SlideShow images={logement.pictures} />
         </div>
         <div className='content_data'>
           <div className='content_location '>

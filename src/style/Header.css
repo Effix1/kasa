@@ -32,6 +32,18 @@ li {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 1000px) {
+  header {
+    padding: 20px 30px 30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .logo_banner {
+    height: 50px;
+  }
+}
+
 @media screen and (max-width: 375px) {
   header {
     padding: 20px;

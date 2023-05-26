@@ -1,27 +1,31 @@
-import { useEffect, useState } from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { useState } from 'react';
+
 import chevronLeft from '../assets/chevron_left.png';
 import chevronRight from '../assets/chevron_right.png';
 import '../style/Slideshow.css';
 
 export default function SlideShow({ images }) {
-  const logement = useLoaderData();
-  const pictures = logement.pictures;
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % pictures.length);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
   const previousSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1) % pictures.length);
+    setCurrentIndex((prevIndex) => {
+      if (prevIndex === 0) {
+        return images.length - 1;
+      } else {
+        return prevIndex - 1;
+      }
+    });
   };
 
   return (
     <>
       <div className='contentSlideshow'>
         <img
-          src={pictures[currentIndex]}
+          src={images[currentIndex]}
           alt='slide'
           className='slideshowPicture'
         />
