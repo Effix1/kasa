@@ -45,6 +45,20 @@
   display: none;
 }
 
+@media screen and (max-width: 1000px) {
+}
+
+@media screen and (max-width: 800px) {
+  .banner_text {
+    padding-left: 25px;
+    justify-content: flex-start;
+  }
+
+  .break-banner-text {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .content_banner {
     width: 335px;

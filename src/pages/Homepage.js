@@ -10,7 +10,7 @@ export default function Homepage() {
       <Banner
         image={image_ban}
         text={
-          <span>
+          <span className='banner-text'>
             Chez vous,
             <br className='break-banner-text' />
             partout et ailleurs
