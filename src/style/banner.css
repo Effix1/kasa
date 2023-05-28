@@ -61,6 +61,7 @@
 
 @media screen and (max-width: 375px) {
   .content_banner {
+    margin: 0 20px 0 20px;
     width: 335px;
     height: 111px;
   }

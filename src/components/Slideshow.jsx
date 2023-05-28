@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import chevronLeft from '../assets/chevron_left.png';
+import chevronLeft from '../assets/chevronleft.svg';
 import chevronRight from '../assets/chevron_right.png';
 import '../style/Slideshow.css';
 
@@ -30,18 +30,12 @@ export default function SlideShow({ images }) {
           className='slideshowPicture'
         />
         <div className='chevron-content'>
-          <img
-            src={chevronLeft}
-            alt='previous'
-            className='chevronleft'
-            onClick={previousSlide}
-          />
-          <img
-            src={chevronRight}
-            alt='next'
-            className='chevronright'
-            onClick={nextSlide}
-          />
+          <div className='chevron' onClick={previousSlide}>
+            <img src={chevronLeft} alt='previous' className='chevronleft' />
+          </div>
+          <div className='chevron' onClick={nextSlide}>
+            <img src={chevronRight} alt='next' className='chevronright' />
+          </div>
         </div>
       </div>
     </>

@@ -30,7 +30,9 @@ export default function Logement() {
           <div className='logement-slide-content'>
             <div className='tag-rating'>
               <div className='contentTag'>
-                <Tag tar={logement.tags} />
+                {logement.tags.map((tag) => {
+                  return <Tag target={tag} />;
+                })}
               </div>
               {console.log(logement)}
               <Rating tar={logement.rating} />
@@ -40,13 +42,19 @@ export default function Logement() {
               <div className='logement-content-cardslide'>
                 <div className='slider'>
                   <CardSlide text={'Description'} className={'small'}>
-                    <p>{logement.description}</p>
+                    <p className='cardslide-content-paragraph'>
+                      {logement.description}
+                    </p>
                   </CardSlide>
                 </div>
                 <div className='slider'>
-                  <CardSlide text={'Coucou'} className={'small'}>
+                  <CardSlide text={'Équipements'} className={'small'}>
                     {equipments.map((equipment) => {
-                      return <p>{equipment}</p>;
+                      return (
+                        <p className='cardslide-content-paragraph'>
+                          {equipment}
+                        </p>
+                      );
                     })}
                   </CardSlide>
                 </div>

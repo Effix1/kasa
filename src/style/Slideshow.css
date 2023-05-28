@@ -1,32 +1,48 @@
 .contentSlideshow {
   position: relative;
-  width: 100%;
 }
 
 .slideshowPicture {
   display: block;
   width: 100%;
-  height: auto;
+  max-height: 415px;
+  object-fit: cover;
+  border-radius: 25px;
 }
 
 .chevron-content {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  pointer-events: none;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  width: 100%;
 }
 
-.chevronleft,
+.chevron {
+  display: flex;
+  align-items: center;
+}
+
+.chevronleft {
+  padding-left: 20px;
+}
+
 .chevronright {
-  width: 20px;
-  height: 20px;
-  opacity: 0.5;
-  pointer-events: auto;
+  padding-right: 20px;
 }
 
 @media screen and (max-width: 375px) {
+  .slideshowPicture {
+    max-width: 335px;
+    height: 255px;
+  }
+
+  .chevronleft,
+  .chevronright {
+    height: 20px;
+    padding: 0 6px 0 6px;
+  }
 }
