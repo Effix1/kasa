@@ -65,11 +65,18 @@
     height: 111px;
   }
 
+  .about-banner {
+    height: 223px;
+  }
+
   .img_ban {
     object-position: 50% 40%;
     max-width: 335px;
   }
 
+  .mountain {
+    object-position: 50% 90%;
+  }
   .banner_text {
     font-size: 24px;
   }

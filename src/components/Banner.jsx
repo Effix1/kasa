@@ -1,7 +1,7 @@
 import '../style/banner.css';
 
 // afficher l'image
-export default function Banner({ image, text, otherClass }) {
+export default function Banner({ image, text, otherClass, imgClass }) {
   let paragraph;
   if (text) {
     paragraph = <p className='banner_text'>{text}</p>;
@@ -9,7 +9,7 @@ export default function Banner({ image, text, otherClass }) {
   return (
     <>
       <div className={`content_banner ${otherClass}`}>
-        <img src={image} alt='' className='img_ban' />
+        <img src={image} alt='' className={`img_ban ${imgClass}`} />
         {paragraph}
       </div>
     </>
