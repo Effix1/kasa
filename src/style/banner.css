@@ -10,7 +10,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  object-fit: contain;
+  object-fit: cover;
+  height: 100%;
 }
 
 .content_banner::after {
@@ -61,22 +62,15 @@
 
 @media screen and (max-width: 375px) {
   .content_banner {
-    margin: 0 20px 0 20px;
-    width: 335px;
     height: 111px;
   }
 
   .img_ban {
-    width: auto;
-    height: 100%;
+    object-position: 50% 40%;
+    max-width: 335px;
   }
 
   .banner_text {
     font-size: 24px;
-    padding-left: 16px;
-  }
-
-  .break-banner-text {
-    display: block;
   }
 }

@@ -28,8 +28,8 @@ export default function About() {
   ];
   return (
     <>
-      <Banner image={image_ban} />
-      <div className='about-content'>
+      <Banner image={image_ban} otherClass='about-banner' />
+      <div className='about-content about-content-mobil-style '>
         {aboutContent.map((content) => {
           return (
             <CardSlide className='big' text={content.text}>
