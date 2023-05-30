@@ -22,9 +22,7 @@ export default function Logement() {
               <h1>{logement.title}</h1>
               <p>{logement.location}</p>
             </div>
-            <div>
-              <ProfilThumbnail />
-            </div>
+            <ProfilThumbnail browserClass='fullScreen' />
           </div>
 
           <div className='logement-slide-content'>
@@ -36,6 +34,7 @@ export default function Logement() {
               </div>
               {console.log(logement)}
               <Rating tar={logement.rating} />
+              <ProfilThumbnail browserClass='mobil' />
             </div>
 
             <div className='content_loca-description content'>

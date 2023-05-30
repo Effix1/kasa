@@ -13,6 +13,10 @@
   padding: 0px;
 }
 
+.mobil {
+  display: none;
+}
+
 .content {
   width: 550px;
 }
@@ -79,6 +83,13 @@
 }
 
 @media screen and (max-width: 375px) {
+  .fullScreen {
+    display: none;
+  }
+
+  .mobil {
+    display: block;
+  }
   .content_location {
     display: flex;
     flex-direction: column;
