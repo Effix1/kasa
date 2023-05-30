@@ -19,8 +19,8 @@ export default function Logement() {
         <div className='content_data'>
           <div className='content_location '>
             <div>
-              <h1>{logement.title}</h1>
-              <p>{logement.location}</p>
+              <h1 className='logement-header-title'>{logement.title}</h1>
+              <p className='logement-header-location'>{logement.location}</p>
             </div>
             <ProfilThumbnail browserClass='fullScreen' />
           </div>

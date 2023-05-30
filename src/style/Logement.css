@@ -66,8 +66,7 @@
 .slider {
   width: 100%;
 }
-
-.content_location h1 {
+.logement-header-title {
   color: #ff6060;
   font-size: 36px;
   font-weight: 500;
@@ -75,7 +74,7 @@
   white-space: nowrap;
 }
 
-.content_location p {
+.logement-header-location {
   color: #ff6060;
   margin: 0;
   font-size: 18px;
@@ -95,8 +94,21 @@
     flex-direction: column;
   }
 
+  .logement-header-title {
+    font-size: 18px;
+  }
+
+  .logement-header-location {
+    font-size: 14px;
+  }
+
   .tag-rating {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contentTag {
+    grid-column-start: span 2;
   }
 
   .logement-content-cardslide {
