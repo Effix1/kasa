@@ -6,6 +6,8 @@
   display: grid;
 }
 .header-card {
+  position: relative;
+  z-index: 2;
   display: flex;
   background-color: #ff6060;
   justify-content: space-between;
@@ -35,6 +37,11 @@
 
 .open {
   display: block;
+  transform: translateY(-9px);
+}
+
+.open p {
+  margin-bottom: 10px;
 }
 
 button {
@@ -69,15 +76,28 @@ button {
     max-height: 30px;
   }
 
+  .open {
+    transform: translateY(-6px);
+    min-height: 143px;
+  }
+
+  .open p {
+    padding-top: 10px;
+  }
+
+  .card-title {
+    font-size: 13px;
+  }
+
+  .card-chevron {
+    width: 14px;
+  }
+
   .card-content {
     margin-top: 0;
   }
 
   .small .card-title {
-    font-size: 12px;
-  }
-
-  .small .card-paragraph p {
     font-size: 12px;
   }
 

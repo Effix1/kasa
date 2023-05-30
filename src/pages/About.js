@@ -7,7 +7,7 @@ import CardSlide from '../components/CardSlide';
 export default function About() {
   const aboutContent = [
     {
-      text: 'fiabilité',
+      text: 'Fiabilité',
       content:
         'Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.',
     },
@@ -19,7 +19,7 @@ export default function About() {
     {
       text: 'Service',
       content:
-        'La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.',
+        "Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.",
     },
     {
       text: 'Sécurité',
@@ -38,7 +38,7 @@ export default function About() {
       <div className='about-content about-content-mobil-style '>
         {aboutContent.map((content) => {
           return (
-            <CardSlide className='big' text={content.text}>
+            <CardSlide text={content.text}>
               <p>{content.content}</p>
             </CardSlide>
           );

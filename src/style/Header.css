@@ -71,5 +71,6 @@ li {
 
   .style_link {
     font-size: 12px;
+    text-transform: uppercase;
   }
 }
