@@ -3,7 +3,7 @@
   background-color: #ff6060;
   color: #fff;
   border-radius: 10px;
-  width: auto;
+
   min-width: 115px;
   height: 25px;
   font-size: 14px;
@@ -12,4 +12,15 @@
   align-items: center;
   white-space: nowrap;
   padding: 0px 10px 0;
+}
+
+@media screen and (max-width: 375px) {
+  .tag {
+    min-width: 84px;
+    font-size: 10px;
+    border-radius: 5px;
+    height: 18px;
+    padding: 0 5px;
+    margin: 0;
+  }
 }

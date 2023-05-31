@@ -83,8 +83,10 @@ button {
     min-height: 143px;
   }
 
-  .open p {
+  .small .card-paragraph p {
     padding-top: 10px;
+    font-size: 12px;
+    margin: 0;
   }
 
   .card-title {
@@ -99,11 +101,11 @@ button {
     margin-top: 0;
   }
 
-  .small .card-title {
-    font-size: 12px;
+  .small {
+    margin-bottom: 10px;
   }
 
-  .card-paragraph {
-    font-size: 12px;
+  .small .card-title {
+    font-size: 13px;
   }
 }

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import '../style/CardSlide.css';
 import chevron from '../assets/Vector.png';
 
-export default function CardSlide({ text, className, children }) {
+export default function CardSlide({ text, className, children, margin }) {
   const [buttonOff, setButtonOff] = useState(false);
   const testClick = () => {
     setButtonOff(!buttonOff);
@@ -10,8 +10,11 @@ export default function CardSlide({ text, className, children }) {
 
   const buttonOpen = `card-paragraph ${buttonOff ? 'open' : ''}`;
   const rotateChevron = `card-chevron ${buttonOff ? 'rotate' : ''}`;
+  const style = {
+    marginBottom: { margin },
+  };
   return (
-    <div className={`card-content ${className}`}>
+    <div className={`card-content ${className}`} style={style}>
       <div className='header-card' onClick={testClick}>
         <p className='card-title'>{text}</p>
         <button className='card-button'>

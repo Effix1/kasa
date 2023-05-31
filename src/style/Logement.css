@@ -1,6 +1,10 @@
 .content_logement {
   display: grid;
-  grid-template-columns: 1, 1fr;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.content_img {
+  max-width: 1240px;
 }
 
 .content_data {
@@ -13,7 +17,7 @@
   padding: 0px;
 }
 
-.mobil {
+.thumbnail-mobil {
   display: none;
 }
 
@@ -61,6 +65,7 @@
 .contentTag {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .slider {
@@ -71,7 +76,6 @@
   font-size: 36px;
   font-weight: 500;
   margin: 0;
-  white-space: nowrap;
 }
 
 .logement-header-location {
@@ -81,14 +85,32 @@
   font-weight: 500;
 }
 
-@media screen and (max-width: 375px) {
-  .fullScreen {
+@media screen and (max-width: 800px) {
+  .thumbnail-fullscreen {
     display: none;
   }
 
-  .mobil {
+  .thumbnail-mobil {
     display: block;
   }
+
+  .tag-rating {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contentTag {
+    grid-column-start: span 2;
+    justify-content: start;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .thumbnail-fullscreen {
+    display: none;
+  }
+
   .content_location {
     display: flex;
     flex-direction: column;
@@ -96,6 +118,8 @@
 
   .logement-header-title {
     font-size: 18px;
+    margin-bottom: 6px;
+    line-height: 1.5;
   }
 
   .logement-header-location {
@@ -109,6 +133,7 @@
 
   .contentTag {
     grid-column-start: span 2;
+    margin-bottom: 17px;
   }
 
   .logement-content-cardslide {
@@ -116,5 +141,18 @@
     flex-direction: column;
     gap: 0;
     max-width: 335px;
+    margin-top: 16px;
+  }
+
+  .small .card-paragraph {
+    padding-top: 17px;
+  }
+
+  .open {
+    padding-top: 20px;
+  }
+
+  .logement-equipments .open p {
+    padding: 0;
   }
 }

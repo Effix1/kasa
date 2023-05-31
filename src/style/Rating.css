@@ -1,1 +1,20 @@
+.star-content {
+  display: flex;
+  gap: 15px;
+}
 
+.star-content img {
+  height: 24px;
+  width: 24px;
+}
+
+@media screen and (max-width: 375px) {
+  .star-content {
+    gap: 6px;
+  }
+
+  .star-content img {
+    height: 13px;
+    width: 13px;
+  }
+}

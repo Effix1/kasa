@@ -22,7 +22,7 @@ export default function Logement() {
               <h1 className='logement-header-title'>{logement.title}</h1>
               <p className='logement-header-location'>{logement.location}</p>
             </div>
-            <ProfilThumbnail browserClass='fullScreen' />
+            <ProfilThumbnail browserClass='thumbnail-fullscreen' />
           </div>
 
           <div className='logement-slide-content'>
@@ -34,7 +34,7 @@ export default function Logement() {
               </div>
               {console.log(logement)}
               <Rating tar={logement.rating} />
-              <ProfilThumbnail browserClass='mobil' />
+              <ProfilThumbnail browserClass='thumbnail-mobil' />
             </div>
 
             <div className='content_loca-description content'>
@@ -47,7 +47,10 @@ export default function Logement() {
                   </CardSlide>
                 </div>
                 <div className='slider'>
-                  <CardSlide text={'Équipements'} className={'small'}>
+                  <CardSlide
+                    text={'Équipements'}
+                    className={'small logement-equipments'}
+                  >
                     {equipments.map((equipment) => {
                       return (
                         <p className='cardslide-content-paragraph'>
