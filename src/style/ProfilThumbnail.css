@@ -16,6 +16,12 @@
   width: 64px;
 }
 
+@media screen and (max-width: 800px) {
+  .thumbnailContent {
+    justify-content: flex-end;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .thumbnailParagraph {
     margin: 0;

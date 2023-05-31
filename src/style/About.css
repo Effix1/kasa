@@ -9,3 +9,9 @@
     padding: 0;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .about-content-mobil-style .open p {
+    font-size: 12px;
+  }
+}

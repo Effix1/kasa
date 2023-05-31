@@ -104,6 +104,12 @@
     justify-content: start;
     gap: 10px;
   }
+
+  .logement-content-cardslide {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -137,9 +143,6 @@
   }
 
   .logement-content-cardslide {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
     max-width: 335px;
     margin-top: 16px;
   }
