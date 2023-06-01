@@ -32,8 +32,7 @@ export default function Logement() {
                   return <Tag target={tag} />;
                 })}
               </div>
-              {console.log(logement)}
-              <Rating tar={logement.rating} />
+              <Rating target={logement.rating} />
               <ProfilThumbnail browserClass='thumbnail-mobil' />
             </div>
 

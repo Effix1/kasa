@@ -44,6 +44,7 @@
   .slideshowPicture {
     max-width: 335px;
     height: 255px;
+    border-radius: 10px;
   }
 
   .chevronleft,

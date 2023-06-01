@@ -3,7 +3,6 @@ import Homepage from './pages/Homepage';
 import Logement from './pages/Logement';
 import Layout from './layouts/Layout';
 import About from './pages/About';
-import Test from './pages/Test';
 import PropertyError from './pages/PropertyError';
 
 export default createBrowserRouter([
@@ -39,10 +38,6 @@ export default createBrowserRouter([
       {
         path: 'a-propos',
         element: <About />,
-      },
-      {
-        path: 'test',
-        element: <Test />,
       },
       {
         path: '*',

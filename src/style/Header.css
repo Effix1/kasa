@@ -57,6 +57,7 @@ li {
 
   .ul-header {
     gap: 10px;
+    padding: 0;
   }
 }
 

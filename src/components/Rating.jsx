@@ -2,8 +2,8 @@ import starFilled from '../assets/starFilled.png';
 import starEmpty from '../assets/starEmpty.png';
 import '../style/Rating.css';
 
-export default function Rating({ tar }) {
-  const rating = tar;
+export default function Rating({ target }) {
+  const rating = target;
 
   const starCount = 5;
   const getStarImage = (index) => {

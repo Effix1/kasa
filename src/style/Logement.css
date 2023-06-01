@@ -113,6 +113,10 @@
 }
 
 @media screen and (max-width: 375px) {
+  .content_data {
+    margin-top: 15px;
+  }
+
   .thumbnail-fullscreen {
     display: none;
   }
