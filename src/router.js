@@ -3,12 +3,13 @@ import Homepage from './pages/Homepage';
 import Logement from './pages/Logement';
 import Layout from './layouts/Layout';
 import About from './pages/About';
-import PropertyError from './pages/PropertyError';
+import LayoutError from './layouts/LayoutError';
 
 export default createBrowserRouter([
   {
     path: '/',
     element: <Layout />,
+    errorElement: <LayoutError />,
 
     children: [
       {
@@ -25,23 +26,13 @@ export default createBrowserRouter([
           return fetch(`/logements.json`)
             .then((res) => res.json())
             .then((logements) => {
-              return logements.find((logement) => {
-                if (params.id === logement.id) {
-                  return true;
-                } else {
-                  return false;
-                }
-              });
+              return logements.find((logement) => params.id === logement.id);
             });
         },
       },
       {
         path: 'a-propos',
         element: <About />,
-      },
-      {
-        path: '*',
-        element: <PropertyError />,
       },
     ],
   },
