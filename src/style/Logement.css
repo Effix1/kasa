@@ -17,12 +17,13 @@
   padding: 0px;
 }
 
-.thumbnail-mobil {
-  display: none;
-}
-
 .content {
   width: 550px;
+}
+
+.logement-location-rating {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .logement-slide-content {
@@ -48,18 +49,11 @@
   gap: 96px;
 }
 
-.content_location {
-  width: auto;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
 .tag-rating {
   display: flex;
-  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .contentTag {
@@ -68,9 +62,6 @@
   flex-wrap: wrap;
 }
 
-.slider {
-  width: 100%;
-}
 .logement-header-title {
   color: #ff6060;
   font-size: 36px;
@@ -85,81 +76,62 @@
   font-weight: 500;
 }
 
-@media screen and (max-width: 800px) {
-  .thumbnail-fullscreen {
-    display: none;
-  }
-
-  .thumbnail-mobil {
-    display: block;
-  }
-
-  .tag-rating {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .contentTag {
-    grid-column-start: span 2;
-    justify-content: start;
-    gap: 10px;
+@media screen and (max-width: 1000px) {
+  .logement-header-title {
+    font-size: 20px;
   }
 
   .logement-content-cardslide {
-    display: flex;
     flex-direction: column;
     gap: 10px;
   }
 }
 
-@media screen and (max-width: 375px) {
-  .content_data {
-    margin-top: 15px;
+@media screen and (max-width: 800px) {
+  .logement-location-rating {
+    margin-bottom: 16px;
   }
 
-  .thumbnail-fullscreen {
-    display: none;
-  }
-
-  .content_location {
-    display: flex;
-    flex-direction: column;
+  .logement-location {
+    grid-column-start: span 2;
   }
 
   .logement-header-title {
+    white-space: inherit;
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .logement-header-location {
+    font-size: 16px;
+  }
+
+  .contentTag {
+    margin: 10px 0 17px;
+    grid-column-start: span 2;
+    grid-row-start: 2;
+  }
+
+  .thumbnail {
+    grid-column-start: 2;
+  }
+
+  .star-content {
+    grid-row-start: 3;
+  }
+
+  .logement-content-cardslide {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .logement-header-title {
     font-size: 18px;
-    margin-bottom: 6px;
-    line-height: 1.5;
   }
 
   .logement-header-location {
     font-size: 14px;
-  }
-
-  .tag-rating {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .contentTag {
-    grid-column-start: span 2;
-    margin-bottom: 17px;
-  }
-
-  .logement-content-cardslide {
-    max-width: 335px;
-    margin-top: 16px;
-  }
-
-  .small .card-paragraph {
-    padding-top: 17px;
-  }
-
-  .open {
-    padding-top: 20px;
-  }
-
-  .logement-equipments .open p {
-    padding: 0;
   }
 }

@@ -9,6 +9,8 @@ import SlideShow from '../components/Slideshow';
 export default function Logement() {
   const logement = useLoaderData();
   const equipments = logement.equipments;
+  const host = logement.host;
+  const [firstName, lastName] = host.name.split(' ');
 
   return (
     <>
@@ -17,50 +19,44 @@ export default function Logement() {
           <SlideShow images={logement.pictures} />
         </div>
         <div className='content_data'>
-          <div className='content_location '>
-            <div>
+          <div className='logement-location-rating'>
+            <div className='logement-location'>
               <h1 className='logement-header-title'>{logement.title}</h1>
               <p className='logement-header-location'>{logement.location}</p>
             </div>
-            <ProfilThumbnail browserClass='thumbnail-fullscreen' />
+
+            <ProfilThumbnail
+              browserClass='thumbnail'
+              firstWord={firstName}
+              secondWord={lastName}
+              image={host.picture}
+            />
+
+            <div className='contentTag'>
+              {logement.tags.map((tag) => {
+                return <Tag target={tag} />;
+              })}
+            </div>
+            <Rating target={logement.rating} />
           </div>
 
-          <div className='logement-slide-content'>
-            <div className='tag-rating'>
-              <div className='contentTag'>
-                {logement.tags.map((tag) => {
-                  return <Tag target={tag} />;
-                })}
-              </div>
-              <Rating target={logement.rating} />
-              <ProfilThumbnail browserClass='thumbnail-mobil' />
-            </div>
+          <div className='logement-content-cardslide'>
+            <CardSlide text={'Description'} className={'small'}>
+              <p className='cardslide-content-paragraph'>
+                {logement.description}
+              </p>
+            </CardSlide>
 
-            <div className='content_loca-description content'>
-              <div className='logement-content-cardslide'>
-                <div className='slider'>
-                  <CardSlide text={'Description'} className={'small'}>
-                    <p className='cardslide-content-paragraph'>
-                      {logement.description}
-                    </p>
-                  </CardSlide>
-                </div>
-                <div className='slider'>
-                  <CardSlide
-                    text={'Équipements'}
-                    className={'small logement-equipments'}
-                  >
-                    {equipments.map((equipment) => {
-                      return (
-                        <p className='cardslide-content-paragraph'>
-                          {equipment}
-                        </p>
-                      );
-                    })}
-                  </CardSlide>
-                </div>
-              </div>
-            </div>
+            <CardSlide
+              text={'Équipements'}
+              className={'small logement-equipments'}
+            >
+              {equipments.map((equipment) => {
+                return (
+                  <p className='cardslide-content-paragraph'>{equipment}</p>
+                );
+              })}
+            </CardSlide>
           </div>
         </div>
       </div>

@@ -1,6 +1,8 @@
 .star-content {
   display: flex;
   gap: 15px;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .star-content img {
@@ -11,6 +13,7 @@
 @media screen and (max-width: 375px) {
   .star-content {
     gap: 6px;
+    justify-content: flex-start;
   }
 
   .star-content img {

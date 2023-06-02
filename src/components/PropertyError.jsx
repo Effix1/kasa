@@ -10,7 +10,7 @@ export default function Error() {
         vous demandez n'existe pas.
       </p>
       <p className='error_link'>
-        <NavLink to='/' className={'style_link'}>
+        <NavLink to='/' className={'return-homepage-link'}>
           Retourner sur la page d’accueil
         </NavLink>
       </p>
