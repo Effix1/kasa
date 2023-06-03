@@ -10,9 +10,10 @@
   width: 24px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 800px) {
   .rating_content {
     grid-row-start: 3;
+    justify-content: flex-start;
   }
 }
 

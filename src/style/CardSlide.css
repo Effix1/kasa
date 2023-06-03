@@ -3,7 +3,8 @@
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 30px;
-  display: grid;
+  display: flex;
+  flex-direction: column;
 }
 .card_header {
   position: relative;
@@ -54,19 +55,6 @@ button {
   transform: rotate(180deg);
 }
 
-.small .card_header {
-  height: 52px;
-  align-items: center;
-}
-
-.small .card_title {
-  font-size: 18px;
-}
-
-.small .card_paragraph p {
-  font-size: 18px;
-}
-
 @media screen and (max-width: 1000px) {
   .open p {
     font-size: 18px;
@@ -83,12 +71,6 @@ button {
     min-height: 143px;
   }
 
-  .small .card_paragraph p {
-    padding-top: 10px;
-    font-size: 12px;
-    margin: 0;
-  }
-
   .card_title {
     font-size: 13px;
   }
@@ -99,13 +81,5 @@ button {
 
   .card_content {
     margin-top: 0;
-  }
-
-  .small {
-    margin-bottom: 10px;
-  }
-
-  .small .card_title {
-    font-size: 13px;
   }
 }
