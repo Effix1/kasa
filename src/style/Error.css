@@ -15,7 +15,7 @@
   font-size: 36px;
 }
 
-.error-mobil-text {
+.error_text-mobil {
   display: none;
 }
 
@@ -27,7 +27,7 @@
   text-decoration: underline;
 }
 
-.return-homepage-link {
+.return_homepage {
   color: #ff6060;
   text-decoration: none;
   font-size: 18px;
@@ -50,11 +50,11 @@
     font-size: 18px;
   }
 
-  .error-mobil-text {
+  .error_text-mobil {
     display: block;
   }
 
-  .return-homepage-link {
+  .return_homepage {
     font-size: 14px;
   }
 }

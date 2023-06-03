@@ -1,7 +1,7 @@
 import { Link, useLoaderData } from 'react-router-dom';
 import Banner from '../components/Banner';
 import Card from '../components/Card';
-import image_ban from '../assets/img_falaise.png';
+import image_ban from '../assets/falaise.svg';
 
 export default function Homepage() {
   const logements = useLoaderData();
@@ -10,9 +10,9 @@ export default function Homepage() {
       <Banner
         image={image_ban}
         text={
-          <span className='banner-text'>
+          <span>
             Chez vous,
-            <br className='break-banner-text' />
+            <br className='break-banner_text' />
             partout et ailleurs
           </span>
         }

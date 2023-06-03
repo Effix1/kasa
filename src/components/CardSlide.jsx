@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import '../style/CardSlide.css';
-import chevron from '../assets/Vector.png';
+import chevron from '../assets/small_chevron.svg';
 
 export default function CardSlide({ text, className, children, margin }) {
   const [buttonOff, setButtonOff] = useState(false);
@@ -8,16 +8,16 @@ export default function CardSlide({ text, className, children, margin }) {
     setButtonOff(!buttonOff);
   };
 
-  const buttonOpen = `card-paragraph ${buttonOff ? 'open' : ''}`;
-  const rotateChevron = `card-chevron ${buttonOff ? 'rotate' : ''}`;
+  const buttonOpen = `card_paragraph ${buttonOff ? 'open' : ''}`;
+  const rotateChevron = `card_chevron ${buttonOff ? 'rotate' : ''}`;
   const style = {
     marginBottom: { margin },
   };
   return (
-    <div className={`card-content ${className}`} style={style}>
-      <div className='header-card' onClick={testClick}>
-        <p className='card-title'>{text}</p>
-        <button className='card-button'>
+    <div className={`card_content ${className}`} style={style}>
+      <div className='card_header' onClick={testClick}>
+        <p className='card_title'>{text}</p>
+        <button>
           <img src={chevron} alt='' className={rotateChevron} />
         </button>
       </div>

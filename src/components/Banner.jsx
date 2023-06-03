@@ -9,7 +9,7 @@ export default function Banner({ image, text, otherClass, imgClass }) {
   return (
     <>
       <div className={`content_banner ${otherClass}`}>
-        <img src={image} alt='' className={`img_ban ${imgClass}`} />
+        <img src={image} alt='' className={`ban_img ${imgClass}`} />
         {paragraph}
       </div>
     </>

@@ -19,10 +19,10 @@ export default function Logement() {
           <SlideShow images={logement.pictures} />
         </div>
         <div className='content_data'>
-          <div className='logement-location-rating'>
-            <div className='logement-location'>
-              <h1 className='logement-header-title'>{logement.title}</h1>
-              <p className='logement-header-location'>{logement.location}</p>
+          <div className='logement_location_rating'>
+            <div className='logement_location'>
+              <h1 className='logement_header_title'>{logement.title}</h1>
+              <p className='logement_header_location'>{logement.location}</p>
             </div>
 
             <ProfilThumbnail
@@ -40,21 +40,14 @@ export default function Logement() {
             <Rating target={logement.rating} />
           </div>
 
-          <div className='logement-content-cardslide'>
+          <div className='logement_content_cardslide'>
             <CardSlide text={'Description'} className={'small'}>
-              <p className='cardslide-content-paragraph'>
-                {logement.description}
-              </p>
+              <p>{logement.description}</p>
             </CardSlide>
 
-            <CardSlide
-              text={'Équipements'}
-              className={'small logement-equipments'}
-            >
+            <CardSlide text={'Équipements'} className={'small'}>
               {equipments.map((equipment) => {
-                return (
-                  <p className='cardslide-content-paragraph'>{equipment}</p>
-                );
+                return <p>{equipment}</p>;
               })}
             </CardSlide>
           </div>

@@ -1,6 +1,6 @@
 import Banner from '../components/Banner';
 import '../style/About.css';
-import image_ban from '../assets/montagne.png';
+import image_ban from '../assets/montagne.svg';
 import imageBanMobil from '../assets/falaisemobil.svg';
 import CardSlide from '../components/CardSlide';
 
@@ -32,10 +32,10 @@ export default function About() {
     <>
       <Banner
         image={isMobil ? imageBanMobil : image_ban}
-        otherClass='about-banner'
+        otherClass='about_banner'
         imgClass='mountain'
       />
-      <div className='about-content about-content-mobil-style '>
+      <div className='about_content about_content_mobil_style '>
         {aboutContent.map((content) => {
           return (
             <CardSlide text={content.text}>

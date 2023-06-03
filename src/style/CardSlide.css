@@ -1,11 +1,11 @@
-.card-content {
+.card_content {
   width: 100%;
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 30px;
   display: grid;
 }
-.header-card {
+.card_header {
   position: relative;
   z-index: 2;
   display: flex;
@@ -18,13 +18,13 @@
   align-items: center;
 }
 
-.card-title {
+.card_title {
   color: #f7f7f7;
   font-size: 24px;
   margin: 0;
 }
 
-.card-paragraph {
+.card_paragraph {
   display: none;
   background-color: #f7f7f7;
   border-radius: 5px;
@@ -54,16 +54,16 @@ button {
   transform: rotate(180deg);
 }
 
-.small .header-card {
+.small .card_header {
   height: 52px;
   align-items: center;
 }
 
-.small .card-title {
+.small .card_title {
   font-size: 18px;
 }
 
-.small .card-paragraph p {
+.small .card_paragraph p {
   font-size: 18px;
 }
 
@@ -74,7 +74,7 @@ button {
 }
 
 @media screen and (max-width: 375px) {
-  .header-card {
+  .card_header {
     max-height: 30px;
   }
 
@@ -83,21 +83,21 @@ button {
     min-height: 143px;
   }
 
-  .small .card-paragraph p {
+  .small .card_paragraph p {
     padding-top: 10px;
     font-size: 12px;
     margin: 0;
   }
 
-  .card-title {
+  .card_title {
     font-size: 13px;
   }
 
-  .card-chevron {
+  .card_chevron {
     width: 14px;
   }
 
-  .card-content {
+  .card_content {
     margin-top: 0;
   }
 
@@ -105,7 +105,7 @@ button {
     margin-bottom: 10px;
   }
 
-  .small .card-title {
+  .small .card_title {
     font-size: 13px;
   }
 }

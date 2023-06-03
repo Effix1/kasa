@@ -1,5 +1,5 @@
-import starFilled from '../assets/starFilled.png';
-import starEmpty from '../assets/starEmpty.png';
+import starFilled from '../assets/satr_filled.svg';
+import starEmpty from '../assets/star_empty.svg';
 import '../style/Rating.css';
 
 export default function Rating({ target }) {
@@ -14,7 +14,7 @@ export default function Rating({ target }) {
   };
 
   return (
-    <div className='star-content'>
+    <div className='rating_content'>
       {[...Array(starCount)].map((_, index) => (
         <img src={getStarImage(index + 1)} alt='star' key={index} />
       ))}

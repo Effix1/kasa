@@ -1,17 +1,17 @@
-.about-content {
+.about_content {
   margin: 0 auto;
   padding: 0 100px;
 }
 
 @media screen and (max-width: 1000px) {
-  .about-content {
+  .about_content {
     margin-top: 20px;
     padding: 0;
   }
 }
 
 @media screen and (max-width: 375px) {
-  .about-content-mobil-style .open p {
+  .about_content_mobil_style .open p {
     font-size: 12px;
   }
 }

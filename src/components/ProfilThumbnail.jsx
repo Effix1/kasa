@@ -9,15 +9,15 @@ export default function ProfilThumbnail({
   return (
     <>
       <div className={browserClass}>
-        <div className='thumbnailContent'>
-          <p className='thumbnailParagraph'>
+        <div className='thumbnail_content'>
+          <p className='thumbnail_paragraph'>
             {firstWord}
             <br />
             {secondWord}
           </p>
           <img
             src={image}
-            className='thumbnailImg'
+            className='thumbnail_img'
             alt={`${firstWord} ${secondWord}`}
           />
         </div>

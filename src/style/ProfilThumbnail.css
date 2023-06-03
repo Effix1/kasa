@@ -1,4 +1,4 @@
-.thumbnailContent {
+.thumbnail_content {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -6,36 +6,36 @@
   gap: 10px;
 }
 
-.thumbnailParagraph {
+.thumbnail_paragraph {
   text-align: right;
   color: #ff6060;
 }
 
-.thumbnailImg {
+.thumbnail_img {
   border-radius: 50%;
   height: 64px;
   width: 64px;
 }
 
 @media screen and (max-width: 800px) {
-  .thumbnailContent {
+  .thumbnail_content {
     justify-content: flex-end;
   }
 }
 
 @media screen and (max-width: 375px) {
-  .thumbnailParagraph {
+  .thumbnail_paragraph {
     margin: 0;
     font-size: 12px;
     font-weight: 500;
   }
 
-  .thumbnailImg {
+  .thumbnail_img {
     height: 32px;
     width: 32px;
   }
 
-  .thumbnailContent {
+  .thumbnail_content {
     justify-content: flex-end;
   }
 }
