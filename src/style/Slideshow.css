@@ -5,7 +5,7 @@
 .slideshow_picture {
   display: block;
   width: 100%;
-  max-height: 415px;
+  height: 415px;
   object-fit: cover;
   border-radius: 25px;
 }

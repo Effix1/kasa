@@ -42,12 +42,16 @@ export default function Logement() {
 
           <div className='logement_content_cardslide'>
             <CardSlide text={'Description'} className={'small'}>
-              <p>{logement.description}</p>
+              <p className='cardslide_content_paragraph'>
+                {logement.description}
+              </p>
             </CardSlide>
 
             <CardSlide text={'Équipements'} className={'small'}>
               {equipments.map((equipment) => {
-                return <p>{equipment}</p>;
+                return (
+                  <p className='cardslide_content_paragraph'>{equipment}</p>
+                );
               })}
             </CardSlide>
           </div>

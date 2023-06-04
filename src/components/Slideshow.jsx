@@ -20,7 +20,7 @@ export default function SlideShow({ images }) {
       }
     });
   };
-
+  const buttonaAppear = images.length > 1;
   return (
     <>
       <div className='slideshow_content'>
@@ -30,12 +30,16 @@ export default function SlideShow({ images }) {
           className='slideshow_picture'
         />
         <div className='chevron_content'>
-          <div className='chevron' onClick={previousSlide}>
-            <img src={chevronLeft} alt='previous' className='chevron_left' />
-          </div>
-          <div className='chevron' onClick={nextSlide}>
-            <img src={chevronRight} alt='next' className='chevron_right' />
-          </div>
+          {buttonaAppear && (
+            <div className='chevron' onClick={previousSlide}>
+              <img src={chevronLeft} alt='previous' className='chevron_left' />
+            </div>
+          )}
+          {buttonaAppear && (
+            <div className='chevron' onClick={nextSlide}>
+              <img src={chevronRight} alt='next' className='chevron_right' />
+            </div>
+          )}
         </div>
       </div>
     </>
