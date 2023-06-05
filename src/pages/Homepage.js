@@ -21,7 +21,6 @@ export default function Homepage() {
       <div className='gallery'>
         {logements.map((logement) => {
           const idLogement = logement.id;
-          console.log(logement.pictures);
           return (
             <Link to={`/logement/${idLogement}`}>
               <Card cover={logement.cover} title={logement.title} />
